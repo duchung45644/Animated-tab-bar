@@ -1,0 +1,67 @@
+:root{
+    --bgColor: #ffb457;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    background:var(--bgColor);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.nav{
+    text-align: center;
+    background: #000;
+    position: relative;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+    font-size: 40px;
+    color: #fff;
+    padding: 0 45px 0 25px;
+}
+
+li{
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    padding: 25px 60px;
+    transition: 1s;
+}
+
+li.active{
+    transform: translateY(-25px);
+}
+
+li.active .round{
+    position: absolute;
+    z-index: -1;
+    bottom: 5px;
+    right: -4px;
+    width: 90px;
+    height: 90px;
+    background:var(--bgColor);
+    border-radius: 50%;
+    transition: 1s;
+
+}
+
+.menu__border{
+    width: 200px;
+    height: 45px;
+    position: absolute;
+    bottom: 99%;
+    left: 0px;
+    clip-path: path('M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7 c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5 c9.2,3.6,17.6,4.2,23.3,4H6.7z');
+    background: #000;
+    transition: 0.7s;
+}
